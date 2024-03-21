@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DailyZen</string>
+    <string name="mood">Как вы себя чувствуете?</string>
+    <string name="alltime">все время</string>
+    <string name="week">неделя</string>
+    <string name="month">месяц</string>
+    <string name="myMood">Мое настроение</string>
+    <string name="ok">ок</string>
+    <string name="moreInformation">подробнее</string>
+    <string name="back">назад</string>
+    <string name="add_emotions">Какие эмоции вы сегодня испытали?</string>
+    <string name="moreInformation_emotion">Опишите подробнее сегодняшний день</string>
+    <string name="title_activity_main_all_notes">MainActivity_allNotes</string>
+    <string name="advice_day">совет на день</string>
+    <string name="emotion">эмоции</string>
+</resources>
