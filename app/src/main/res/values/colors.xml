@@ -4,11 +4,12 @@
     <color name="gray">#AFAFAF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00FFFFFF</color>
-    <color name="background_main_color">#fff0f5</color>
-    <color name="background_button">#ffa191c9</color>
-    <color name="background_button_change">#ff6750a4</color>
+    <color name="background_main_color">#fff</color>
+    <color name="background_feelings_button">#EBEFF4</color>
+    <color name="background_toolbar">#88E6E6FA</color>
+    <color name="background_button">#CCCCFF</color>
+    <color name="background_button_change">#F0C2EB</color>
     <color name="backgroud_moreInfromain">#fcf3f6</color>
-    <color name="backgroud_graph">#FDFAFB</color>
     <color name="mood_10">#2EF436</color>
     <color name="mood_9">#73F42E</color>
     <color name="mood_8">#8AF42E</color>

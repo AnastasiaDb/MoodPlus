@@ -56,21 +56,21 @@ public class MainActivity_information extends AppCompatActivity {
             for (String x : emotion_arr) {
                 if (x.equals("reverie")) {
                     set[0] = true;
-                    reverieButton.setBackgroundResource(R.color.background_button_change);
+                    reverieButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else if (x.equals("happy")) {
-                    happyButton.setBackgroundResource(R.color.background_button_change);
+                    happyButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                     set[1] = true;
                 } else if (x.equals("sad")) {
-                    sadButton.setBackgroundResource(R.color.background_button_change);
+                    sadButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                     set[2] = true;
                 } else if (x.equals("shy")) {
-                    shyButton.setBackgroundResource(R.color.background_button_change);
+                    shyButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                     set[3] = true;
                 } else if (x.equals("confidence")) {
-                    confidenceButton.setBackgroundResource(R.color.background_button_change);
+                    confidenceButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                     set[4] = true;
                 } else if (x.equals("angry")) {
-                    angryButton.setBackgroundResource(R.color.background_button_change);
+                    angryButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                     set[5] = true;
                 }
             }
@@ -87,10 +87,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[0]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[0] = true;
-                    reverieButton.setBackgroundResource(R.color.background_button_change);
+                    reverieButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[0] = false;
-                    reverieButton.setBackgroundResource(R.color.background_button);
+                    reverieButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });
@@ -102,10 +102,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[1]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[1] = true;
-                    happyButton.setBackgroundResource(R.color.background_button_change);
+                    happyButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[1] = false;
-                    happyButton.setBackgroundResource(R.color.background_button);
+                    happyButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });
@@ -117,10 +117,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[2]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[2] = true;
-                    sadButton.setBackgroundResource(R.color.background_button_change);
+                    sadButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[2] = false;
-                    sadButton.setBackgroundResource(R.color.background_button);
+                    sadButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });
@@ -131,10 +131,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[3]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[3] = true;
-                    shyButton.setBackgroundResource(R.color.background_button_change);
+                    shyButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[3] = false;
-                    shyButton.setBackgroundResource(R.color.background_button);
+                    shyButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });
@@ -146,10 +146,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[4]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[4] = true;
-                    confidenceButton.setBackgroundResource(R.color.background_button_change);
+                    confidenceButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[4] = false;
-                    confidenceButton.setBackgroundResource(R.color.background_button);
+                    confidenceButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });
@@ -162,10 +162,10 @@ public class MainActivity_information extends AppCompatActivity {
                 if (!set[5]) {
                     // Устанавливаем цвет фона кнопки в зависимости от ее состояния
                     set[5] = true;
-                    angryButton.setBackgroundResource(R.color.background_button_change);
+                    angryButton.setBackgroundResource(R.drawable.feelings_button_background_choosed);
                 } else {
                     set[5] = false;
-                    angryButton.setBackgroundResource(R.color.background_button);
+                    angryButton.setBackgroundResource(R.drawable.feelings_button_background);
                 }
             }
         });

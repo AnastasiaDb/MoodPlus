@@ -3,6 +3,21 @@
     <style name="Base.Theme.MoodPlus" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#9A9AEB</item>
+    </style>
+
+    <style name="NiceButton" parent="ThemeOverlay.Material3.Button">
+        <item name="android:backgroundTint">#9E9EFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FeelingsButton" parent="ThemeOverlay.Material3.Button">
+        <item name="android:background">@drawable/feelings_button_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#161615</item>
     </style>
 
     <style name="Theme.MoodPlus" parent="Base.Theme.MoodPlus" />

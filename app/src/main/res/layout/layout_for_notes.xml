@@ -42,6 +42,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="3dp"
         android:text="@string/emotion"
+        android:theme="@style/NiceButton"
         android:textSize="15dp" />
 
     <LinearLayout

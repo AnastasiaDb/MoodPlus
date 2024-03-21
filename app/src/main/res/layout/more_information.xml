@@ -1,151 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_main_color"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
     tools:context=".MainActivity_information">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/add_emotions"
-        android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp" />
 
-
-    <Button
-        android:id="@+id/ok"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ok"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.947" />
+        android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="164dp"
-        android:layout_height="287dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/shy"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/shy_more"
-            android:padding="10dp"
-            android:text="смущение"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shy"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@drawable/shy_more"
+                android:text="  Смущение"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sad"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/sad_more"
-            android:padding="10dp"
-            android:text="грусть"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sad"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/sad_more"
+                android:text="  Грусть"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/happy"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/happy_more"
-            android:padding="10dp"
-            android:text="веселье"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/happy"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/happy_more"
+                android:text="  Счастье"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="164dp"
-        android:layout_height="287dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/angry"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/angry_more"
-            android:padding="8dp"
-            android:text="злость"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/angry"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/angry_more"
+                android:text="  Злость"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/reverie"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/reverie_more"
-            android:padding="8dp"
-            android:text="задумчивость"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reverie"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/fear_more"
+                android:text="  Страх"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/confidence"
-            android:layout_width="162dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="18dp"
-            android:background="@color/background_button"
-            android:drawableLeft="@drawable/confidence_more"
-            android:padding="8dp"
-            android:text="уверенность"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confidence"
+                style="@style/FeelingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:drawableStart="@drawable/relieve_more"
+                android:text="  Уверенность"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <EditText
         android:id="@+id/editTextEmotion"
-        android:layout_width="387dp"
-        android:layout_height="178dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
         android:background="@drawable/background_edittext"
-        android:ems="10"
         android:gravity="top"
         android:hint="@string/moreInformation_emotion"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.81" />
+        android:padding="20dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:theme="@style/NiceButton" />
+
+</LinearLayout>
